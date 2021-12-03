@@ -1,0 +1,13 @@
+grammar;
+
+Identifier: () = {
+    r"[a-z]+" => (),
+}
+
+pub Field1 = {
+    Identifier ":" Identifier
+}
+
+Field2 = {
+    Identifier ":" "string"
+}
